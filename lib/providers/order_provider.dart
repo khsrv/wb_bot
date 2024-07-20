@@ -8,7 +8,6 @@ import 'package:flutter/services.dart';
 import 'package:pdf/widgets.dart' as pw;
 import 'package:pdf/widgets.dart';
 import 'package:printing/printing.dart';
-import 'package:wb_bot_2/common/icons.dart';
 import 'package:wb_bot_2/data/repository/order_repository.dart';
 import 'package:wb_bot_2/models/order_model.dart';
 import 'package:wb_bot_2/models/sticker_model.dart';
@@ -346,7 +345,7 @@ class OrderProvider extends ChangeNotifier {
     final sorted = Map.fromEntries(
       groupedOrders.entries.toList()
         ..sort(
-          (e1, e2) => e2.value.compareTo(e1.value),
+          (e1, e2) => e2.key.toLowerCase().compareTo(e1.key.toLowerCase()),
         ),
     );
 

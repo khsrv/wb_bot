@@ -36,7 +36,9 @@ class OrderApiClient {
             next = response.data['next'];
             var list = response.data['supplies'] as List;
             for (var item in list) {
-              if (item['done'] == false) {
+              if (item['done'] == false 
+              // || item['id']=="WB-GI-97181002"
+              ) {
                 suppliseList.add(Supplies.fromJson(item));
               }
             }
