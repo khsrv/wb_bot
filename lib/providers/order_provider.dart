@@ -104,7 +104,7 @@ class OrderProvider extends ChangeNotifier {
   Future printListOrder(String tittle) async {
     final pdf = pw.Document();
     final fontText = await rootBundle.load(
-        "/Users/akubiabdukahhor/Desktop/projects/wb_bot_2/assets/fonts/montserrat.ttf");
+        "packages/wb_bot_2/assets/fonts/montserrat.ttf");
     pdf.addPage(
       pw.Page(
         pageFormat: const PdfPageFormat(2480, 3508),

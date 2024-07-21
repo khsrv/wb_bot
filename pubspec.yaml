@@ -70,6 +70,7 @@ flutter:
   assets:
     - .env
     - assets/fonts/
+    - packages/wb_bot_2/assets/fonts/montserrat.ttf
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
